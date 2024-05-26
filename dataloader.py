@@ -77,4 +77,20 @@ def get_dataloader(csv_file, root_dir, batch_size=4, transform=None, shuffle=Tru
     return dataloader
 
 
+# # Test 
+# if __name__ == '__main__':
+#     csv_file = '/media/hthieu/Data_New_6TB/breastcancer/cbis-ddsm/processed_reorganized/Calc-Training_mask_processed_set.csv'
+#     root_dir = '/media/hthieu/Data_New_6TB/breastcancer/cbis-ddsm/processed_reorganized/calc/training'
 
+#     transform = transforms.Compose([
+#         ToTensor()
+#     ])
+
+#     dataloader = get_dataloader(csv_file, root_dir, batch_size=4, transform=transform)
+
+#     for i, (images, masks) in enumerate(dataloader):
+#         print(f"Batch {i+1}:")
+#         print(f"Images shape: {images.shape}")
+#         print(f"Masks shape: {masks.shape}")
+#         if i == 2:  # To limit the number of batches printed for the test
+#             break
