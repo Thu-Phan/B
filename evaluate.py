@@ -23,8 +23,8 @@ def evaluate_model(model, dataloader, criterion, device):
     return total_loss
 
 if __name__ == '__main__':
-    csv_file = '/media/hthieu/Data_New_6TB/breastcancer/cbis-ddsm/processed_reorganized/Calc-Training_mask_processed_set.csv'
-    root_dir = '/media/hthieu/Data_New_6TB/breastcancer/cbis-ddsm/processed_reorganized/calc/training'
+    csv_file = '/media/hthieu/Data_New_6TB/breastcancer/cbis-ddsm/processed_reorganized/Calc-Test_mask_processed_set.csv'
+    root_dir = '/media/hthieu/Data_New_6TB/breastcancer/cbis-ddsm/processed_reorganized/calc/test'
     
     transform = transforms.Compose([
         ToTensor()
